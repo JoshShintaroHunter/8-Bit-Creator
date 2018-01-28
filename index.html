@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+<body>
+    <h1>8-Bit Designer</h1>
+
+    <div class="container">
+        <h2>Choose Grid Size</h2>
+
+        <form id="sizePicker">
+            <h4>Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1"></h4>
+            <h4>Grid Width:
+            <input type="number" id="inputWeight" name="width" min="1" value="1"></h4>
+            <input type="submit" id="sub">
+        </form>
+
+        <h3>Hide/Show Grid Sizer:<input type="checkbox" id="hideShow"></h3>
+
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+    </div>
+    
+    <div class="canvas">
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
